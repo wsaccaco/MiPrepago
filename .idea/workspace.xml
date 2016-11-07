@@ -2,140 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d6fb1db-38ce-4259-8806-b983ce80ad77" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/DSDProyecto_GrupoDistribuidos.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/css/bootstrap-datetimepicker.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/css/bootstrap-select.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/css/navbar-fixed-top.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/css/plugins/dataTables.bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/css/plugins/metisMenu/metisMenu.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/css/plugins/metisMenu/metisMenu.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/css/plugins/morris.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/css/plugins/social-buttons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/css/plugins/timeline.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/css/pygments-manni.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/css/sb-admin-2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/css/signin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/css/site.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/equipo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/equipo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/equipos.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/equipos.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/equipos_registro.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/equipos_registro.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/less/bordered-pulled.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/less/core.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/less/fixed-width.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/less/font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/less/icons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/less/larger.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/less/list.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/less/path.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/less/rotated-flipped.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/less/spinning.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/less/stacked.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/scss/_bordered-pulled.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/scss/_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/scss/_fixed-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/scss/_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/scss/_larger.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/scss/_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/scss/_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/scss/_rotated-flipped.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/scss/_spinning.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/scss/_stacked.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/font-awesome-4.1.0/scss/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/25.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/27.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/28.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/29.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/30.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/32.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/34.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/35.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/36.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/38.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/42.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/51.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/52.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/53.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/54.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/55.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/56.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/57.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/58.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/60.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/62.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/63.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/64.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/8.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/ico/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/analytics.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/bootstrap-datetimepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/bootstrap-select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/ie-emulation-modes-warning.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/ie10-viewport-bug-workaround.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/jquery-1.11.0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/moment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/plugins/dataTables/dataTables.bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/plugins/dataTables/jquery.dataTables.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/plugins/flot/excanvas.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/plugins/flot/flot-data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/plugins/flot/jquery.flot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/plugins/flot/jquery.flot.pie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/plugins/flot/jquery.flot.resize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/plugins/flot/jquery.flot.tooltip.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/plugins/metisMenu/metisMenu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/plugins/metisMenu/metisMenu.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/plugins/morris/morris-data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/plugins/morris/morris.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/plugins/morris/morris.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/plugins/morris/raphael.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/js/sb-admin-2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/proveedores.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MiPrepago/proveedores.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/font-awesome-4.1.0/fonts/fontawesome-webfont.woff2" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/analytics.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/bootstrap.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/font-awesome-4.1.0/fonts/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/font-awesome-4.1.0/fonts/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/font-awesome-4.1.0/fonts/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/font-awesome-4.1.0/fonts/fontawesome-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/equipo.html" afterPath="$PROJECT_DIR$/equipo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/css/font-awesome.css" afterPath="$PROJECT_DIR$/font-awesome-4.1.0/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/font-awesome-4.1.0/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/font-awesome-4.1.0/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/font-awesome-4.1.0/fonts/fontawesome-webfont.svg" />
     </list>
     <ignored path="MiPrepago.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -150,8 +32,61 @@
   <component name="FavoritesManager">
     <favorites_list name="MiPrepago" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="equipo.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/equipo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="font-awesome.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/font-awesome-4.1.0/css/font-awesome.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sb-admin-2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/sb-admin-2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ru.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/ru.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/equipo.html" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -209,6 +144,56 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MiPrepago" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MiPrepago" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font-awesome-4.1.0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MiPrepago" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MiPrepago" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font-awesome-4.1.0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MiPrepago" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MiPrepago" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="font-awesome-4.1.0" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -221,6 +206,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/font-awesome-4.1.0/fonts" />
+      <recent name="$PROJECT_DIR$/font-awesome-4.1.0" />
+    </key>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -231,24 +222,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1478487156526</updated>
-      <workItem from="1478487158175" duration="88000" />
+      <workItem from="1478487158175" duration="792000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88000" />
+    <option name="totallyTimeSpent" value="792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="23" width="1857" height="1120" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24958678" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24958678" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32976654" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18968871" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -275,5 +266,49 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/sb-admin-2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ru.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2351">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/equipo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/font-awesome-4.1.0/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="45" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
