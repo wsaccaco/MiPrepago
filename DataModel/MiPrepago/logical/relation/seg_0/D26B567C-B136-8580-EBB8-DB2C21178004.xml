@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_4" directorySegmentName="seg_0" id="D26B567C-B136-8580-EBB8-DB2C21178004">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:42:50 UTC</createdTime>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<engineerTo>
+<item key="04F68CB4-ACB0-B804-EF0F-D944E6584364" value="true"/>
+</engineerTo>
+<sourcePk>4C143329-6BC1-F0B5-96AE-83A3E096F002</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6D53DD11-BD08-7C50-074C-A2B360754312</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3BF06A65-1E7A-98E6-B35C-E313B5979513</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

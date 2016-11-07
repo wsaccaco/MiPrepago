@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MiPrepago" id="265E54BF-EE86-9D6B-C12B-FAB378C806E3" version="3.5">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:20:12 UTC</createdTime>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>265E54BF-EE86-9D6B-C12B-FAB378C806E3</designId>
+</OSDM_Design>

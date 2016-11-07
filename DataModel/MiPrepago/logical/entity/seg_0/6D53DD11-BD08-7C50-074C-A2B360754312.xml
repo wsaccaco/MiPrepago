@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6D53DD11-BD08-7C50-074C-A2B360754312" name="proveedor">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:36:26 UTC</createdTime>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<engineerTo>
+<item key="04F68CB4-ACB0-B804-EF0F-D944E6584364" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="49776C71-B7E4-A226-A3B2-F06C2FAF1B4E">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:36:42 UTC</createdTime>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<engineerTo>
+<item key="04F68CB4-ACB0-B804-EF0F-D944E6584364" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="042456A0-3370-63B5-1858-C872DF02B441">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:36:54 UTC</createdTime>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<engineerTo>
+<item key="04F68CB4-ACB0-B804-EF0F-D944E6584364" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ruta_servicio" id="F5B07CB6-EE82-80EE-9856-45813B39B24A">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:37:24 UTC</createdTime>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<engineerTo>
+<item key="04F68CB4-ACB0-B804-EF0F-D944E6584364" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_servicio" id="7D9EB37A-6A27-09F6-0F83-D1593769D266">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:37:49 UTC</createdTime>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<engineerTo>
+<item key="04F68CB4-ACB0-B804-EF0F-D944E6584364" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4C143329-6BC1-F0B5-96AE-83A3E096F002" name="proveedor PK">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:36:52 UTC</createdTime>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<engineerTo>
+<item key="04F68CB4-ACB0-B804-EF0F-D944E6584364" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>49776C71-B7E4-A226-A3B2-F06C2FAF1B4E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
