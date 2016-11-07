@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2D097D3-59E7-E4D4-9451-CEAC97E821EF" name="marca">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:18 UTC</createdTime>
+<generatorID>E64DCB65-1AF9-126D-D06E-4234D71E17AE</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="marca_id" id="13009B38-BE64-764B-9A03-73657EE96659">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>BB99B153-4345-5FAF-7F07-83F3467A02AC</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="69A172C4-F28D-E016-EF57-20F938F13B44">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>A9F6D6D2-64C0-48AB-575C-716322DA8E6C</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="782A94C4-453D-132A-E4AD-620F3A44F964" name="marca_PK">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>1F82BBE5-409D-2CA4-3C91-3EE1D5DC1A7C</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13009B38-BE64-764B-9A03-73657EE96659"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

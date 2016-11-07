@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="81E69B7C-0314-5EE4-813A-5D50A0B3D6EF" name="reserva">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>3BF06A65-1E7A-98E6-B35C-E313B5979513</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="reserva_id" id="15C943B1-4487-0E5C-6D76-B695DFDF630F">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>3DC2C6DB-F58A-3A69-DFDB-9B09B5206115</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="07EE361B-BDF2-2E7D-59B6-A9A35D83C13F">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>07FBDCFC-E502-C982-583B-70A321DD92FE</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellidos" id="D43ABC65-2736-809B-264F-2256546932CE">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>3CC88C26-F58D-A21E-FEA3-B26B53F99B57</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="B665AAF1-FF7A-43AE-E421-46190E72ED63">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>07C826DA-9C6E-4EB2-71DC-5411D7D8C7D5</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="celular" id="01185A58-A8BB-BCFC-386E-FD37BE5BAD76">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>2DE854C7-18B0-6113-B6E2-D947B0AA4DE3</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad" id="8BC8AC38-628A-CB5A-114B-C9665AE4FA4D">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>50EDF8FE-1053-41CC-737D-5AFE44FF4280</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="F118511F-783A-D181-11A2-B59CB11AC559">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>15B84434-3F91-8F2F-08EB-5BDC941219CD</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="proveedor_id" id="85F9FE18-0A63-FD93-1D5E-4DA979C3D26C">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>AB354086-B2C4-51C2-0D9D-80474814ACE4</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5C2D8C40-C6AD-FEDC-CD44-B66D4E159F52" referredColumn="591AC0CD-A68B-45C8-3E79-C0B894EC373E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47E843FD-2B4D-6E90-4266-795FC815D9F7" name="reserva_PK">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>6C3E16D7-00AF-30DC-404A-FFF6CFE8FC08</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="15C943B1-4487-0E5C-6D76-B695DFDF630F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB478B30-46AA-C217-9EAB-6E0F9BABA24F" name="reserva_proveedor_FK">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>D26B567C-B136-8580-EBB8-DB2C21178004</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85F9FE18-0A63-FD93-1D5E-4DA979C3D26C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

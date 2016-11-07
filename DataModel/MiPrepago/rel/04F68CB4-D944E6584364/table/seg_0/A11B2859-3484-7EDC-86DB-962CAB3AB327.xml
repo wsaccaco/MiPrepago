@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A11B2859-3484-7EDC-86DB-962CAB3AB327" name="modelo">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>0E2948E1-72D0-F97D-F328-14D5BB7E8117</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="modelo_id" id="3C782D6D-B0B7-2EBB-7438-A017981CC2A1">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>55309E83-1CF9-A222-AC13-3430BF170421</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="172B3FBD-B6FD-1CBC-A6F7-31AB2CA54A10">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>4874D448-3F01-75E5-A86F-23D736360436</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="marca_marca_id" id="EEDC5F68-6DEA-945F-AE45-F0971787B8D6">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>E2506DFD-7733-A1D4-FFD9-166E1E9923EB</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B6D4944-9D9B-3F21-DB27-3D84644CBC81" referredColumn="13009B38-BE64-764B-9A03-73657EE96659"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3360A8D1-F128-8F1B-0406-FAD70EBA4E97" name="modelo_PK">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>139222F2-730E-043C-0E79-D3096A318EBA</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C782D6D-B0B7-2EBB-7438-A017981CC2A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C614CB8E-10E8-1A90-A77E-F4223D107FB6" name="modelo_marca_FK">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>BFF58890-F4C6-5AEE-D5EC-2B254E3B8467</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEDC5F68-6DEA-945F-AE45-F0971787B8D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

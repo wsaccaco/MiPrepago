@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="3DC2C6DB-F58A-3A69-DFDB-9B09B5206115">
+<Attribute name="reserva_id" id="3DC2C6DB-F58A-3A69-DFDB-9B09B5206115">
 <createdBy>saccaco</createdBy>
 <createdTime>2016-11-07 05:38:32 UTC</createdTime>
 <ownerDesignName>MiPrepago</ownerDesignName>
@@ -129,8 +129,9 @@
 <createdBy>saccaco</createdBy>
 <createdTime>2016-11-07 05:38:40 UTC</createdTime>
 <ownerDesignName>MiPrepago</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="04F68CB4-ACB0-B804-EF0F-D944E6584364" value="true"/>
+<item key="04F68CB4-ACB0-B804-EF0F-D944E6584364" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="49776C71-B7E4-A226-A3B2-F06C2FAF1B4E">
+<Attribute name="proveedor_id" id="49776C71-B7E4-A226-A3B2-F06C2FAF1B4E">
 <createdBy>saccaco</createdBy>
 <createdTime>2016-11-07 05:36:42 UTC</createdTime>
 <ownerDesignName>MiPrepago</ownerDesignName>
@@ -41,7 +41,7 @@
 <dataTypeSize>90</dataTypeSize>
 <ownDataTypeParameters>90,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="ruta_servicio" id="F5B07CB6-EE82-80EE-9856-45813B39B24A">
+<Attribute name="ruta servicio" id="F5B07CB6-EE82-80EE-9856-45813B39B24A">
 <createdBy>saccaco</createdBy>
 <createdTime>2016-11-07 05:37:24 UTC</createdTime>
 <ownerDesignName>MiPrepago</ownerDesignName>
@@ -55,7 +55,7 @@
 <dataTypeSize>250</dataTypeSize>
 <ownDataTypeParameters>250,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="tipo_servicio" id="7D9EB37A-6A27-09F6-0F83-D1593769D266">
+<Attribute name="tipo servicio" id="7D9EB37A-6A27-09F6-0F83-D1593769D266">
 <createdBy>saccaco</createdBy>
 <createdTime>2016-11-07 05:37:49 UTC</createdTime>
 <ownerDesignName>MiPrepago</ownerDesignName>
@@ -75,8 +75,9 @@
 <createdBy>saccaco</createdBy>
 <createdTime>2016-11-07 05:36:52 UTC</createdTime>
 <ownerDesignName>MiPrepago</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="04F68CB4-ACB0-B804-EF0F-D944E6584364" value="true"/>
+<item key="04F68CB4-ACB0-B804-EF0F-D944E6584364" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

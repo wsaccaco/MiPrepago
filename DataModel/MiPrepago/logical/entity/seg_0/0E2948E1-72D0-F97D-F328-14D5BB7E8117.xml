@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="55309E83-1CF9-A222-AC13-3430BF170421">
+<Attribute name="modelo_id" id="55309E83-1CF9-A222-AC13-3430BF170421">
 <createdBy>saccaco</createdBy>
 <createdTime>2016-11-07 05:34:26 UTC</createdTime>
 <ownerDesignName>MiPrepago</ownerDesignName>
@@ -41,7 +41,7 @@
 <dataTypeSize>90</dataTypeSize>
 <ownDataTypeParameters>90,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="marca_id" id="E2506DFD-7733-A1D4-FFD9-166E1E9923EB">
+<Attribute name="marca id" id="E2506DFD-7733-A1D4-FFD9-166E1E9923EB">
 <createdBy>saccaco</createdBy>
 <createdTime>2016-11-07 05:41:18 UTC</createdTime>
 <generatorID>BFF58890-F4C6-5AEE-D5EC-2B254E3B8467</generatorID>
@@ -61,8 +61,9 @@
 <createdBy>saccaco</createdBy>
 <createdTime>2016-11-07 05:34:34 UTC</createdTime>
 <ownerDesignName>MiPrepago</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="04F68CB4-ACB0-B804-EF0F-D944E6584364" value="true"/>
+<item key="04F68CB4-ACB0-B804-EF0F-D944E6584364" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

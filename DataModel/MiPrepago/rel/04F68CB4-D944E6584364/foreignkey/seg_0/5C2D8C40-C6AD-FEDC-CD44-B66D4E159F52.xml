@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5C2D8C40-C6AD-FEDC-CD44-B66D4E159F52" containerWithKeyObject="81E69B7C-0314-5EE4-813A-5D50A0B3D6EF" localFKIndex="AB478B30-46AA-C217-9EAB-6E0F9BABA24F" name="reserva_proveedor_FK">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>D26B567C-B136-8580-EBB8-DB2C21178004</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<referredTableLongName>proveedor</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>00B9F0F5-D606-7BA8-0D50-E6574860717A</referredTableID>
+<keyObject>7DFD8133-FAEF-D316-9790-9BA44D81F413</keyObject>
+<referredKeyID>7DFD8133-FAEF-D316-9790-9BA44D81F413</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>proveedor_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

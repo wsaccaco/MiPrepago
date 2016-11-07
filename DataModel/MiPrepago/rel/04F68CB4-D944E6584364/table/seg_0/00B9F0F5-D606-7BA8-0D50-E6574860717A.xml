@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="00B9F0F5-D606-7BA8-0D50-E6574860717A" name="proveedor">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>6D53DD11-BD08-7C50-074C-A2B360754312</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="proveedor_id" id="591AC0CD-A68B-45C8-3E79-C0B894EC373E">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>49776C71-B7E4-A226-A3B2-F06C2FAF1B4E</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="488B3D9B-558E-A2D6-D4C3-609F825CB389">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>042456A0-3370-63B5-1858-C872DF02B441</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>90</dataTypeSize>
+<ownDataTypeParameters>90,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ruta_servicio" id="F749578E-B4EF-B343-BD39-59041B32DE4A">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>F5B07CB6-EE82-80EE-9856-45813B39B24A</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_servicio" id="CF0417E4-1586-6D31-A59C-113EBC874EC7">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>7D9EB37A-6A27-09F6-0F83-D1593769D266</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7DFD8133-FAEF-D316-9790-9BA44D81F413" name="proveedor_PK">
+<createdBy>saccaco</createdBy>
+<createdTime>2016-11-07 05:45:19 UTC</createdTime>
+<generatorID>4C143329-6BC1-F0B5-96AE-83A3E096F002</generatorID>
+<ownerDesignName>MiPrepago</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="591AC0CD-A68B-45C8-3E79-C0B894EC373E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_2" directorySegmentName="seg_0" id="BFF58890-F4C6-5AEE-D5EC-2B254E3B8467">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="modelo marca FK" directorySegmentName="seg_0" id="BFF58890-F4C6-5AEE-D5EC-2B254E3B8467">
 <createdBy>saccaco</createdBy>
 <createdTime>2016-11-07 05:41:18 UTC</createdTime>
 <ownerDesignName>MiPrepago</ownerDesignName>
