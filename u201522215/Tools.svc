@@ -1,1 +1,1 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="u201522215.Tools" CodeBehind="Tools.svc.cs" %>
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WS_MiPrepago.Tools" CodeBehind="Tools.svc.cs" %>

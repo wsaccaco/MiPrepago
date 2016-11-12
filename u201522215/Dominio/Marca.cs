@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Web;
 
-namespace u201522215.Dominio
+namespace WS_MiPrepago.Dominio
 {
     [DataContract]
     public class Marca

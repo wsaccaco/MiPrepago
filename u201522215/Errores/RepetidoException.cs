@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Web;
 
-namespace u201522215.Errores
+namespace WS_MiPrepago.Errores
 {
     [DataContract]
     public class RepetidoException

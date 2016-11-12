@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
-using u201522215.Dominio;
+using WS_MiPrepago.Dominio;
 
-namespace u201522215.Persistencia
+namespace WS_MiPrepago.Persistencia
 {
     public class MarcaDAO
     {

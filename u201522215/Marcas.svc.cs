@@ -4,11 +4,11 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
-using u201522215.Dominio;
-using u201522215.Errores;
-using u201522215.Persistencia;
+using WS_MiPrepago.Dominio;
+using WS_MiPrepago.Errores;
+using WS_MiPrepago.Persistencia;
 
-namespace u201522215
+namespace WS_MiPrepago
 {
     // NOTA: puede usar el comando "Rename" del menú "Refactorizar" para cambiar el nombre de clase "Perdidas" en el código, en svc y en el archivo de configuración a la vez.
     // NOTA: para iniciar el Cliente de prueba WCF para probar este servicio, seleccione Perdidas.svc o Perdidas.svc.cs en el Explorador de soluciones e inicie la depuración.
