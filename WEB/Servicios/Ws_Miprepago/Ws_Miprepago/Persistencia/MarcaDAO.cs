@@ -9,7 +9,7 @@ namespace WS_MiPrepago.Persistencia
 {
     public class MarcaDAO
     {
-        private string cadenaConexion = @"Server=DESKTOP-9NRDT19\SQLEXPRESS;Database=BD_MiPrepago;Trusted_Connection=True;";
+        private string cadenaConexion = @"Server=localhost;Database=BD_MiPrepago;Trusted_Connection=True;";
 
         public Marca crear(Marca marcaACrear)
         {

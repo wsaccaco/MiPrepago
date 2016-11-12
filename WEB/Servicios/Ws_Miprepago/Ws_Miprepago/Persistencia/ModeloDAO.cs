@@ -9,7 +9,7 @@ namespace WS_MiPrepago.Persistencia
 {
     public class ModeloDAO
     {
-        private string cadenaConexion = @"Server=DESKTOP-9NRDT19\SQLEXPRESS;Database=BD_MiPrepago;Trusted_Connection=True;";
+        private string cadenaConexion = @"Server=localhost;Database=BD_MiPrepago;Trusted_Connection=True;";
 
         public Modelo crear(Modelo modeloACrear)
         {
