@@ -5,5 +5,4 @@ window.$ = window.jQuery = require('jquery');
 require('jquery.soap');
 var equipos = require('./modules/equipos');
 
-
 equipos.test()

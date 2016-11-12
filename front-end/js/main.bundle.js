@@ -51,7 +51,6 @@
 	__webpack_require__(2);
 	var equipos = __webpack_require__(3);
 
-
 	equipos.test()
 
 
