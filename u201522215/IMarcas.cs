@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using System.ServiceModel.Web;
 using System.Text;
+using System.Web.Services;
 using WS_MiPrepago.Dominio;
 using WS_MiPrepago.Errores;
 
@@ -21,6 +23,7 @@ namespace WS_MiPrepago
         Marca ObtenerMarca(int Id);
 
         [OperationContract]
+        [WebInvoke(Method = "*")]
         List<Marca> listarMarca();
 
         [OperationContract]
