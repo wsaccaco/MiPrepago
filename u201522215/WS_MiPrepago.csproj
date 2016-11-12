@@ -95,8 +95,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dominio\Marca.cs" />
+    <Compile Include="Dominio\Modelo.cs" />
+    <Compile Include="Errores\ModeloRepetidoException.cs" />
     <Compile Include="Errores\RepetidoException.cs" />
     <Compile Include="IMarcas.cs" />
+    <Compile Include="IModelos.cs" />
     <Compile Include="ITools.cs" />
     <Compile Include="Marcas.svc.cs">
       <DependentUpon>Marcas.svc</DependentUpon>
