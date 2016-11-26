@@ -20,7 +20,7 @@ namespace RestTest
             string postdata = "{\"Id\":\"3\",\"nombre\":\"Motorola\",\"estado\":\"ACTIVO\"}"; //JSON
             byte[] data = Encoding.UTF8.GetBytes(postdata);
             HttpWebRequest req = (HttpWebRequest)WebRequest
-                .Create("http://localhost:12855/Marcas.svc/Marcas");
+                .Create("http://localhost:12855/Marcas.svc/marca");
             req.Method = "POST";
             req.ContentLength = data.Length;
             req.ContentType = "application/json";
@@ -36,7 +36,7 @@ namespace RestTest
 
             // Prueba de obtención de Marca vía HTTP GET
             HttpWebRequest req2 = (HttpWebRequest)WebRequest
-                .Create("http://localhost:12855/Marcas.svc/Marcas/3");
+                .Create("http://localhost:12855/Marcas.svc/marca/3");
             req2.Method = "GET";
             HttpWebResponse res2 = (HttpWebResponse)req2.GetResponse();
             StreamReader reader2 = new StreamReader(res2.GetResponseStream());

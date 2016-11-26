@@ -19,14 +19,14 @@ namespace RestTest
         {
 
             HttpWebRequest req = (HttpWebRequest)WebRequest
-                .Create("http://localhost:12855/Marcas.svc/Marcas/2");
+                .Create("http://localhost:12855/Marcas.svc/marca/2");
             req.Method = "DELETE";
             req.ContentType = "application/json";
             var reqStream = req.GetRequestStream();
             HttpWebResponse res = (HttpWebResponse)req.GetResponse();
 
             HttpWebRequest req2 = (HttpWebRequest)WebRequest
-                .Create("http://localhost:12855/Marcas.svc/Marcas/2");
+                .Create("http://localhost:12855/Marcas.svc/marca/2");
             req2.Method = "GET";
             HttpWebResponse res2 = (HttpWebResponse)req2.GetResponse();
             StreamReader reader2 = new StreamReader(res2.GetResponseStream());

@@ -17,7 +17,8 @@ namespace RESTServices
 
         public Marca crearMarca(Marca MarcaACrear)
         {
-            if ("Google".Equals(MarcaACrear.nombre))
+            String[] filtros = { "Google", "Motorola", "Microsoft" };
+            if (Array.IndexOf(filtros, MarcaACrear.nombre)>-1)
             {
                 throw new WebFaultException<string>("Esa Marca no se acepta", HttpStatusCode.Conflict);
             }

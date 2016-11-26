@@ -22,7 +22,7 @@ namespace RestTest
             string postdata = "{\"Id\":\"1\",\"nombre\":\"Huawei\",\"estado\":\"ACTIVO\"}"; //JSON
             byte[] data = Encoding.UTF8.GetBytes(postdata);
             HttpWebRequest req = (HttpWebRequest)WebRequest
-                .Create("http://localhost:12855/Marcas.svc/Marcas");
+                .Create("http://localhost:12855/Marcas.svc/marca");
             req.Method = "PUT";
             req.ContentLength = data.Length;
             req.ContentType = "application/json";
