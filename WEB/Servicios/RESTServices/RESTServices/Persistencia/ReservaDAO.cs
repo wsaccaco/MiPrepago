@@ -12,16 +12,15 @@ namespace RESTServices.Persistencia
         public Reserva crear(Reserva ReservaACrear)
         {
             Reserva ReservaCreado = null;
-            string sql = "INSERT INTO Ventas VALUES(@id, @estado, @cantidad, @fecha, @codigoReserva, @modeloId)";
+            string sql = "INSERT INTO Ventas VALUES(null, @estado, @cantidad, GETDATE(), @codigoReserva, @modeloId)";
             using (SqlConnection conexion = new SqlConnection(utilConexion.CadenaConexion))
             {
                 conexion.Open();
                 using (SqlCommand comando = new SqlCommand(sql, conexion))
                 {
-                    comando.Parameters.Add(new SqlParameter("@id", ReservaACrear.id));
                     comando.Parameters.Add(new SqlParameter("@estado", ReservaACrear.estado));
                     comando.Parameters.Add(new SqlParameter("@cantidad", ReservaACrear.cantidad));
-                    comando.Parameters.Add(new SqlParameter("@fecha", ReservaACrear.fecha));
+                    //comando.Parameters.Add(new SqlParameter("@fecha", ReservaACrear.fecha));
                     comando.Parameters.Add(new SqlParameter("@codigoReserva", ReservaACrear.codigoReserva));
                     comando.Parameters.Add(new SqlParameter("@modeloId", ReservaACrear.modeloId));
                     comando.ExecuteNonQuery();

@@ -9,6 +9,7 @@ alter table modelo
 alter column modelo_id int not null  
 go
 
+
 insert into marca values(1, 'Sony');
 insert into marca values(2, 'Samsung');
 insert into marca values(3, 'Apple');
@@ -31,7 +32,8 @@ insert into modelo values(9, 'iPhone6', 3,'2014-05-10')
 GO
 
 insert into proveedor values(1, 'claro', 'http://localhost:12855/Modelos.svc/modelo/', 'json');
-select * from proveedor;
+GO
+
 
 USE BD_PROVEEDOR
 GO

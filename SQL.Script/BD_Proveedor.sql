@@ -78,7 +78,7 @@ Se esperaba:
 
 CREATE TABLE ventas 
     (
-     id INTEGER NOT NULL , 
+     id INTEGER NOT NULL Identity(1, 1), 
      estado VARCHAR (20) , 
      cantidad INTEGER , 
      fecha DATETIME , 

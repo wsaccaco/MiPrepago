@@ -9,7 +9,7 @@ namespace RESTServices.Dominio
     [DataContract]
     public class Reserva
     {
-        [DataMember]
+        [DataMember(IsRequired = false)]
         public int id { get; set; }
         
         [DataMember(IsRequired = false)]
