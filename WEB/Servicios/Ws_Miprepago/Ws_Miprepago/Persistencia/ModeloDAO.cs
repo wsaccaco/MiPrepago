@@ -9,13 +9,13 @@ namespace WS_MiPrepago.Persistencia
 {
     public class ModeloDAO
     {
-        private string cadenaConexion = @"Server=localhost;Database=BD_MiPrepago;Trusted_Connection=True;";
+        
 
         public Modelo crear(Modelo modeloACrear)
         {
             Modelo modeloCreado = null;
             string sql = "INSERT INTO modelo VALUES(@modelo_id, @nombre,@marca_marca_id)";
-            using (SqlConnection conexion = new SqlConnection(cadenaConexion))
+            using (SqlConnection conexion = new SqlConnection(Util.CadenaConexion))
             {
                 conexion.Open();
                 using (SqlCommand comando = new SqlCommand(sql, conexion))
@@ -34,7 +34,7 @@ namespace WS_MiPrepago.Persistencia
         {
             Modelo modeloEncontrado= null;
             string sql = "SELECT * FROM modelo WHERE modelo_id = @id";
-            using (SqlConnection conexion = new SqlConnection(cadenaConexion))
+            using (SqlConnection conexion = new SqlConnection(Util.CadenaConexion))
             {
                 conexion.Open();
                 using (SqlCommand comando = new SqlCommand(sql, conexion))
@@ -62,7 +62,7 @@ namespace WS_MiPrepago.Persistencia
         {
             Modelo modeloModificado= null;
             string sql = "";
-            using (SqlConnection conexion = new SqlConnection(cadenaConexion))
+            using (SqlConnection conexion = new SqlConnection(Util.CadenaConexion))
             {
                 conexion.Open();
                 using (SqlCommand comando = new SqlCommand(sql, conexion))
@@ -82,7 +82,7 @@ namespace WS_MiPrepago.Persistencia
             List<Modelo> modelosEncontrados= new List<Modelo>();
             Modelo modeloEncontrado = null;
             string sql = "SELECT * FROM modelo";
-            using (SqlConnection conexion = new SqlConnection(cadenaConexion))
+            using (SqlConnection conexion = new SqlConnection(Util.CadenaConexion))
             {
                 conexion.Open();
                 using (SqlCommand comando = new SqlCommand(sql, conexion))
@@ -110,7 +110,7 @@ namespace WS_MiPrepago.Persistencia
             List<Modelo> modelosEncontrados = new List<Modelo>();
             Modelo modeloEncontrado = null;
             string sql = "SELECT modelo_id,nombre,marca_marca_id,cast(fec_fab as varchar)fec_fab FROM modelo where marca_marca_id=@id";
-            using (SqlConnection conexion = new SqlConnection(cadenaConexion))
+            using (SqlConnection conexion = new SqlConnection(Util.CadenaConexion))
             {
                 conexion.Open();
                 using (SqlCommand comando = new SqlCommand(sql, conexion))

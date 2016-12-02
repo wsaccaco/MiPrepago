@@ -114,6 +114,7 @@
     </Compile>
     <Compile Include="Persistencia\MarcaDAO.cs" />
     <Compile Include="Persistencia\ModeloDAO.cs" />
+    <Compile Include="Persistencia\Util.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>

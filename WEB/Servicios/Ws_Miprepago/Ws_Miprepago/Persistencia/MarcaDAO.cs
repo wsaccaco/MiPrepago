@@ -9,13 +9,12 @@ namespace WS_MiPrepago.Persistencia
 {
     public class MarcaDAO
     {
-        private string cadenaConexion = @"Server=localhost;Database=BD_MiPrepago;Trusted_Connection=True;";
 
         public Marca crear(Marca marcaACrear)
         {
             Marca marcaCreado = null;
             string sql = "INSERT INTO marca VALUES(@marca_id, @nombre)";
-            using (SqlConnection conexion = new SqlConnection(cadenaConexion))
+            using (SqlConnection conexion = new SqlConnection(Util.CadenaConexion))
             {
                 conexion.Open();
                 using(SqlCommand comando = new SqlCommand(sql, conexion))
@@ -33,7 +32,7 @@ namespace WS_MiPrepago.Persistencia
         {
             Marca marcaEncontrado = null;
             string sql = "SELECT * FROM marca WHERE marca_id = @id";
-            using(SqlConnection conexion = new SqlConnection(cadenaConexion))
+            using(SqlConnection conexion = new SqlConnection(Util.CadenaConexion))
             {
                 conexion.Open();
                 using (SqlCommand comando = new SqlCommand(sql, conexion))
@@ -60,7 +59,7 @@ namespace WS_MiPrepago.Persistencia
         {
             Marca marcaModificada = null;
             string sql = "";
-            using (SqlConnection conexion = new SqlConnection(cadenaConexion))
+            using (SqlConnection conexion = new SqlConnection(Util.CadenaConexion))
             {
                 conexion.Open();
                 using (SqlCommand comando = new SqlCommand(sql, conexion))
@@ -79,7 +78,7 @@ namespace WS_MiPrepago.Persistencia
             List<Marca> marcasEncontradas = new List<Marca>();
             Marca marcaEncontrada = null;
             string sql = "SELECT * FROM marca";
-            using(SqlConnection conexion = new SqlConnection(cadenaConexion))
+            using(SqlConnection conexion = new SqlConnection(Util.CadenaConexion))
             {
                 conexion.Open();
                 using(SqlCommand comando = new SqlCommand(sql, conexion)){
