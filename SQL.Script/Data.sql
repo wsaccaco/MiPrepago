@@ -14,6 +14,9 @@ insert into marca values(2, 'Samsung');
 insert into marca values(3, 'Apple');
 insert into marca values(4, 'Motorola');
 
+insert into marca values (5,'Otros')
+GO
+
 insert into modelo values(1, 'xperia 8', 1, '2016-05-10')
 insert into modelo values(2, 'xperia 7', 1, '2015-05-10')
 insert into modelo values(3, 'Z1', 1 ,'2014-05-10')
@@ -27,7 +30,8 @@ insert into modelo values(8, 'iPhone5S', 3,'2015-05-10')
 insert into modelo values(9, 'iPhone6', 3,'2014-05-10')
 GO
 
-
+insert into proveedor values(1, 'claro', 'http://localhost:12855/Modelos.svc/modelo/', 'json');
+select * from proveedor;
 
 USE BD_PROVEEDOR
 GO
