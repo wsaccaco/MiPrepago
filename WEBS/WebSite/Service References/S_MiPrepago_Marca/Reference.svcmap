@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="134ca474-f72a-40bc-87ab-282b6403e494" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:60184/Marcas.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Marcas.disco" MetadataType="Disco" ID="08f6bc35-a4c5-4657-8165-7258c7c5aafa" SourceId="1" SourceUrl="http://localhost:60184/Marcas.svc?disco" />
+    <MetadataFile FileName="Marcas.xsd" MetadataType="Schema" ID="d6ff95c8-6e03-4d89-80ac-3fc303aaba9d" SourceId="1" SourceUrl="http://localhost:60184/Marcas.svc?xsd=xsd3" />
+    <MetadataFile FileName="Marcas1.xsd" MetadataType="Schema" ID="e18d9358-114d-4f60-94cc-3b28be64cc61" SourceId="1" SourceUrl="http://localhost:60184/Marcas.svc?xsd=xsd0" />
+    <MetadataFile FileName="Marcas2.xsd" MetadataType="Schema" ID="0337a7ac-1605-40f6-a2bd-d80e7751bad1" SourceId="1" SourceUrl="http://localhost:60184/Marcas.svc?xsd=xsd1" />
+    <MetadataFile FileName="Marcas3.xsd" MetadataType="Schema" ID="cdae4bff-75e4-43ef-848f-1cefa8e8062f" SourceId="1" SourceUrl="http://localhost:60184/Marcas.svc?xsd=xsd2" />
+    <MetadataFile FileName="Perdidas.wsdl" MetadataType="Wsdl" ID="4b2abeca-5cfa-4cfa-a57d-93d24f0077ae" SourceId="1" SourceUrl="http://localhost:60184/Marcas.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

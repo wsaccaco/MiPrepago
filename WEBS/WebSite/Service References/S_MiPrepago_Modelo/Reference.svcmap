@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7ee6ba32-8d39-402f-a71e-dcf1cc9c0f28" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:60184/Smodelo.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Smodelo.xsd" MetadataType="Schema" ID="bb92aab1-4496-4704-9567-e0f202cdd7a3" SourceId="1" SourceUrl="http://localhost:60184/Smodelo.svc?xsd=xsd3" />
+    <MetadataFile FileName="Smodelo.disco" MetadataType="Disco" ID="01b0d82b-9058-4b6c-b87f-fc82d6e2ad8f" SourceId="1" SourceUrl="http://localhost:60184/Smodelo.svc?disco" />
+    <MetadataFile FileName="Smodelo1.xsd" MetadataType="Schema" ID="04be4a21-294e-422b-9574-6b7c4a07fc51" SourceId="1" SourceUrl="http://localhost:60184/Smodelo.svc?xsd=xsd2" />
+    <MetadataFile FileName="Smodelo2.xsd" MetadataType="Schema" ID="b4bfb44c-d4e6-48c9-910d-8e7f6454340c" SourceId="1" SourceUrl="http://localhost:60184/Smodelo.svc?xsd=xsd0" />
+    <MetadataFile FileName="Smodelo.wsdl" MetadataType="Wsdl" ID="2424c568-5675-49e7-b762-c14710ce07af" SourceId="1" SourceUrl="http://localhost:60184/Smodelo.svc?wsdl" />
+    <MetadataFile FileName="Smodelo3.xsd" MetadataType="Schema" ID="793f9be7-7ad4-4039-85f4-6573517afb26" SourceId="1" SourceUrl="http://localhost:60184/Smodelo.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

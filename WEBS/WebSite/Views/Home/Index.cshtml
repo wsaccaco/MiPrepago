@@ -1,0 +1,138 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="row">
+    <div class="col-lg-5">
+        <label class="control-label ">Marca :</label>
+        <select class="form-control input-sm" id="cbo_marca" data-name="Marca">
+
+            @foreach (var item in (SelectList)ViewBag.cbo_marca)
+            {
+                <option value="@item.Value">@item.Text</option>
+            }
+        </select>
+    </div>
+    <div class="col-lg-5">
+        <label class="control-label otro" style="display:none">Escribir Marca :</label>
+        <input type="text" class="form-control otro" id="txt_marca" style="display:none" />
+
+    </div>
+    <div class="col-lg-4">
+        <input type="button" id="btn_listar" value="Listar Producto" class="btn btn-primary" />
+    </div>
+
+    <table id="tb_modelo" data-toggle="table"
+           class="table table-hover" data-show-multi-sort="true"
+           data-show-columns="true"
+           data-side-pagination="server" data-url='@Url.Action("Listar_ModelosxMarcas")'
+           data-ajax="ajaxRequest"
+           data-pagination="true"
+           data-row-style="rowStyle"
+           data-click-to-select="true">
+        <thead>
+            <tr>
+                <th data-field="nombre" data-animation="true" data-sortable="true">Nombre</th>
+                <th data-field="fec_fab" data-animation="true" data-sortable="true">Fecha Fabricacion</th>
+
+                <th data-field="action" data-formatter="actionFormatter" data-events="actionEvents" style="width:305px">Action</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<script>
+    $("#tb_modelo").bootstrapTable({
+        url: '@Url.Action("Listar_Contrato")',
+        method: 'get',
+        columns: [
+             {
+                 field: 'nombre',
+                 title: 'Nombre',
+                 width: 59,
+             },
+            {
+                field: 'fec_fab',
+                title: 'Fecha Fabricacion',
+                width: 160
+
+            },
+
+            {
+                field: 'action',
+                title: 'Action',
+                width: 380
+            }
+        ],
+        pagination: false,
+        //pageSize: 10,
+        //pageList: [5, 10, 60, 120],
+        sidePagination: 'server', // client or server
+        queryParams: function (params) {
+        },
+        showRefresh: true,
+        maintainSelected: true,
+        clickToSelect: true,
+        singleSelect: true,
+
+    });
+    function actionFormatter(value, row, index) {
+        return [
+        '<a class="ver ml10" href="javascript:void(0)" title="Solicitar" style="color:#DD4814"> solicitar',
+                      '<i class="glyphicon glyphicon-eye-open" style="font-size:23px"></i>',
+                      '</a>'
+        ].join('');
+    }
+    function ajaxRequest(params) {
+
+        var cbo_marca = $("#cbo_marca").val();
+        if (cbo_marca != 5) {
+            $.get('@Url.Action("Listar_ModelosxMarcas")', { id: cbo_marca }, function (data) {
+                if (data == null) {
+                    $.notify({
+                        message: "No hay datos."
+                    }, {
+                        type: 'danger'
+                    });
+                } else {
+                    params.success({
+                        total: 0,
+                        rows: data.rows
+                    });
+                }
+            });
+
+        } else {
+            var marca = $("#txt_marca").val();
+            $.get('@Url.Action("Listar_Marca_Proveedor")', { nombre: marca }, function (data) {
+                if (data == null) {
+                    $.notify({
+                        message: "No hay datos."
+                    }, {
+                        type: 'danger'
+                    });
+                } else {
+                    params.success({
+                        total: 0,
+                        rows: data.rows
+                    });
+                }
+            });
+
+        }
+        params.complete();
+    };
+    $("#cbo_marca").on("change", function () {
+        if ($("#cbo_marca").val() == 5) {
+            $(".otro").css({ 'display': "block" });
+        } else {
+            $(".otro").css({ 'display': "none" });
+        }
+    });
+    $("#btn_listar").click(function () {
+        
+        $("#tb_modelo").bootstrapTable('refresh');
+    });
+</script>
