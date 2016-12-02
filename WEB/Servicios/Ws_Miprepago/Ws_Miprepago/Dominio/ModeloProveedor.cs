@@ -25,5 +25,8 @@ namespace WS_MiPrepago.Dominio
 
         [DataMember(IsRequired = false)]
         public int marcaId { get; set; }
+
+        [DataMember(IsRequired = false)]
+        public string proveedor { get; set; }
     }
 }

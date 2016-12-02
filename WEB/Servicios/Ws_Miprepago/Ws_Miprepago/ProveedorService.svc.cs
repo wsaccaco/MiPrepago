@@ -39,20 +39,13 @@ namespace WS_MiPrepago
                         nombre = r.nombre,
                         precio = r.precio,
                         stock = r.stock,
-                        marcaId = r.marcaId
+                        marcaId = r.marcaId,
+                        proveedor = r.proveedor
                     };
                     list.Add(mo);
 
                 }
             }
-
-
-
-
-
-
-            //JavaScriptSerializer js2 = new JavaScriptSerializer();
-            //Modelo MarcaObtenido = js2.Deserialize<Modelo>(ModeloJson2);
 
             return list;
         }
