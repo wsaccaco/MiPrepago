@@ -22,5 +22,11 @@ namespace WS_MiPrepago
 
         [OperationContract]
         List<Modelo> listarModelo();
+
+        [OperationContract]
+        List<Modelo> Listar_ModeloxMarca(int id);
+
+        [OperationContract]
+        List<Modelo> Listado_ModeloxMarca_Proveedor(string nombre);
     }
 }

@@ -13,7 +13,7 @@ namespace RESTServices.Persistencia
         {
             List<Modelo> ModelosEncontrados = new List<Modelo>();
             Modelo ModeloEncontrada = null;
-            string sql = "select * from modelo mo inner join marca ma ON mo.marca_id = ma.id where ma.nombre = @nombreMarca";
+            string sql = "select mo.id,mo.nombre,cast(mo.anio as varchar) anio,mo.precio,mo.stock,mo.marca_id   from modelo mo inner join marca ma ON mo.marca_id = ma.id where ma.nombre = @nombreMarca";
             using (SqlConnection conexion = new SqlConnection(utilConexion.CadenaConexion))
             {
                 conexion.Open();
@@ -30,7 +30,9 @@ namespace RESTServices.Persistencia
                                 nombre = (string)resultado["nombre"],
                                 precio = float.Parse(resultado["precio"].ToString()),
                                 stock = Int32.Parse(resultado["stock"].ToString()),
-                                marcaId = Int32.Parse(resultado["marca_id"].ToString())
+                                marcaId = Int32.Parse(resultado["marca_id"].ToString()),
+                                anio= (string)resultado["anio"]
+
                             };
                             ModelosEncontrados.Add(ModeloEncontrada);
                         }

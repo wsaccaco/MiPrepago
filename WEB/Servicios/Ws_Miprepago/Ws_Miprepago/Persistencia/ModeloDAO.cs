@@ -105,5 +105,35 @@ namespace WS_MiPrepago.Persistencia
             return modelosEncontrados;
         }
 
+        public List<Modelo> Listar_ModeloxMarca(int id)
+        {
+            List<Modelo> modelosEncontrados = new List<Modelo>();
+            Modelo modeloEncontrado = null;
+            string sql = "SELECT modelo_id,nombre,marca_marca_id,cast(fec_fab as varchar)fec_fab FROM modelo where marca_marca_id=@id";
+            using (SqlConnection conexion = new SqlConnection(cadenaConexion))
+            {
+                conexion.Open();
+                using (SqlCommand comando = new SqlCommand(sql, conexion))
+                {
+                    comando.Parameters.Add(new SqlParameter("@id", id));
+                    using (SqlDataReader resultado = comando.ExecuteReader())
+                    {
+                        while (resultado.Read())
+                        {
+                            modeloEncontrado = new Modelo()
+                            {
+                                modelo_id = Int32.Parse(resultado["modelo_id"].ToString()),
+                                nombre = (string)resultado["nombre"],
+                                marca_marca_id = Int32.Parse(resultado["marca_marca_id"].ToString()),
+                                fec_fab= (string)resultado["fec_fab"]
+                            };
+                            modelosEncontrados.Add(modeloEncontrado);
+                        }
+                    }
+                }
+            }
+            return modelosEncontrados;
+        }
+
     }
 }

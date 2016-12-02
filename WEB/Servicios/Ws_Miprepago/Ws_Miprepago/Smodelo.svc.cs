@@ -1,9 +1,13 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Web.Script.Serialization;
 using WS_MiPrepago.Dominio;
 using WS_MiPrepago.Errores;
 using WS_MiPrepago.Persistencia;
@@ -48,6 +52,51 @@ namespace WS_MiPrepago
         {
  
             return modeloDAO.obtener(Id);
+        }
+        public List<Modelo> Listar_ModeloxMarca(int id)
+        {
+
+            return modeloDAO.Listar_ModeloxMarca(id);
+        }
+        public List<Modelo> Listado_ModeloxMarca_Proveedor(string nombre) {
+
+            HttpWebRequest req2 = (HttpWebRequest)WebRequest
+               .Create("http://localhost:12855/Modelos.svc/modelo/marca/"+ nombre);
+            req2.Method = "GET";
+            HttpWebResponse res2 = (HttpWebResponse)req2.GetResponse();
+            StreamReader reader2 = new StreamReader(res2.GetResponseStream());
+            string ModeloJson2 = reader2.ReadToEnd();
+
+            List<Modelo> list = new List<Modelo>();
+            Modelo mo = new Modelo();
+            var resultado = JsonConvert.DeserializeObject<dynamic>(ModeloJson2);
+            int total = resultado.Count;
+            if (total > 0)
+            {
+                foreach (var r in resultado) {
+                    mo = new Modelo
+                    {
+                        modelo_id = r.id,
+                        nombre = r.nombre,
+                        fec_fab = r.anio
+                    };
+                    list.Add(mo);
+
+                }
+            }
+
+
+
+
+
+
+            //JavaScriptSerializer js2 = new JavaScriptSerializer();
+            //Modelo MarcaObtenido = js2.Deserialize<Modelo>(ModeloJson2);
+
+            return list;
+
+        }
+
     }
-    }
+   
 }
