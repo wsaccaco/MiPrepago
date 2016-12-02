@@ -3,6 +3,7 @@
   <xs:complexType name="Modelo">
     <xs:sequence>
       <xs:element minOccurs="0" name="fec_fab" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="marca" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="marca_marca_id" type="xs:int" />
       <xs:element minOccurs="0" name="modelo_id" type="xs:int" />
       <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />

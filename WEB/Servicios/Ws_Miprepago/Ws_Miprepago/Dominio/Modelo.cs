@@ -17,5 +17,7 @@ namespace WS_MiPrepago.Dominio
         public int marca_marca_id { get; set; }
         [DataMember]
         public string fec_fab { get; set; }
+        [DataMember]
+        public string marca { get; set; }
     }
 }

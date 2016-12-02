@@ -26,6 +26,9 @@ namespace WebSite.S_MiPrepago_Modelo {
         private string fec_fabField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string marcaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private int marca_marca_idField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -53,6 +56,19 @@ namespace WebSite.S_MiPrepago_Modelo {
                 if ((object.ReferenceEquals(this.fec_fabField, value) != true)) {
                     this.fec_fabField = value;
                     this.RaisePropertyChanged("fec_fab");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string marca {
+            get {
+                return this.marcaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.marcaField, value) != true)) {
+                    this.marcaField = value;
+                    this.RaisePropertyChanged("marca");
                 }
             }
         }

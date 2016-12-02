@@ -144,6 +144,13 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Service References\S_MiPrepago_Proveedor_Rest\ProveedorService.disco" />
+    <None Include="Service References\S_MiPrepago_Proveedor_Rest\configuration91.svcinfo" />
+    <None Include="Service References\S_MiPrepago_Proveedor_Rest\configuration.svcinfo" />
+    <None Include="Service References\S_MiPrepago_Proveedor_Rest\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-2.1.4.min.map" />
     <None Include="Service References\S_MiPrepago_Modelo\Smodelo.wsdl" />
@@ -162,10 +169,25 @@
     <Content Include="Service References\S_MiPrepago_Modelo\WebSite.S_MiPrepago_Modelo.Modelo.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Views\Solicitud\Solicitud.cshtml" />
+    <None Include="Service References\S_MiPrepago_Proveedor_Rest\ProveedorService.wsdl" />
+    <None Include="Service References\S_MiPrepago_Proveedor_Rest\ProveedorService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\S_MiPrepago_Proveedor_Rest\ProveedorService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\S_MiPrepago_Proveedor_Rest\ProveedorService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\S_MiPrepago_Proveedor_Rest\WebSite.S_MiPrepago_Proveedor_Rest.ModeloProveedor.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SolicitudController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -176,6 +198,11 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Service References\S_MiPrepago_Modelo\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\S_MiPrepago_Proveedor_Rest\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -208,6 +235,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\S_MiPrepago_Marca\" />
     <WCFMetadataStorage Include="Service References\S_MiPrepago_Modelo\" />
+    <WCFMetadataStorage Include="Service References\S_MiPrepago_Proveedor_Rest\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

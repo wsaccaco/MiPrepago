@@ -38,14 +38,17 @@
                 <th data-field="nombre" data-animation="true" data-sortable="true">Nombre</th>
                 <th data-field="fec_fab" data-animation="true" data-sortable="true">Fecha Fabricacion</th>
 
-                <th data-field="action" data-formatter="actionFormatter" data-events="actionEvents" style="width:305px">Action</th>
+                <th data-field="action" data-formatter="actionFormatter" data-events="actionEvents" style="width:305px">solicitud</th>
             </tr>
         </thead>
     </table>
 </div>
+<div id="result"></div>
+
 <script>
+
     $("#tb_modelo").bootstrapTable({
-        url: '@Url.Action("Listar_Contrato")',
+        url: '@Url.Action("Listar_ModelosxMarcas")',
         method: 'get',
         columns: [
              {
@@ -79,10 +82,12 @@
 
     });
     function actionFormatter(value, row, index) {
+        var modelos;
         return [
-        '<a class="ver ml10" href="javascript:void(0)" title="Solicitar" style="color:#DD4814"> solicitar',
+        '<a class="solicitar ml10" href="@Url.Action("Solicitud", "Solicitud")?marca=' + row.marca + '&modelo=' + row.nombre + '" title="Solicitar" style="color:#DD4814"> solicitar',
                       '<i class="glyphicon glyphicon-eye-open" style="font-size:23px"></i>',
                       '</a>'
+                      
         ].join('');
     }
     function ajaxRequest(params) {
@@ -124,6 +129,8 @@
         }
         params.complete();
     };
+
+
     $("#cbo_marca").on("change", function () {
         if ($("#cbo_marca").val() == 5) {
             $(".otro").css({ 'display': "block" });
@@ -132,7 +139,9 @@
         }
     });
     $("#btn_listar").click(function () {
-        
+
         $("#tb_modelo").bootstrapTable('refresh');
     });
+
+
 </script>

@@ -109,7 +109,7 @@ namespace WS_MiPrepago.Persistencia
         {
             List<Modelo> modelosEncontrados = new List<Modelo>();
             Modelo modeloEncontrado = null;
-            string sql = "SELECT modelo_id,nombre,marca_marca_id,cast(fec_fab as varchar)fec_fab FROM modelo where marca_marca_id=@id";
+            string sql = "SELECT m.modelo_id,m.nombre,m.marca_marca_id,cast(m.fec_fab as varchar)fec_fab,ma.nombre marca FROM modelo m inner join marca ma on ma.marca_id = m.marca_marca_id where m.marca_marca_id =@id";
             using (SqlConnection conexion = new SqlConnection(Util.CadenaConexion))
             {
                 conexion.Open();
@@ -125,7 +125,8 @@ namespace WS_MiPrepago.Persistencia
                                 modelo_id = Int32.Parse(resultado["modelo_id"].ToString()),
                                 nombre = (string)resultado["nombre"],
                                 marca_marca_id = Int32.Parse(resultado["marca_marca_id"].ToString()),
-                                fec_fab= (string)resultado["fec_fab"]
+                                fec_fab= (string)resultado["fec_fab"],
+                                marca = (string)resultado["marca"]
                             };
                             modelosEncontrados.Add(modeloEncontrado);
                         }

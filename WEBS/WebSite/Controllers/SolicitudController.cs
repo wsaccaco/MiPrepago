@@ -6,60 +6,46 @@ using System.Web.Mvc;
 
 namespace WebSite.Controllers
 {
-    public class HomeController : Controller
+    public class SolicitudController : Controller
     {
-        S_MiPrepago_Marca.MarcasClient objc = new S_MiPrepago_Marca.MarcasClient();
-        S_MiPrepago_Modelo.SmodeloClient objm = new S_MiPrepago_Modelo.SmodeloClient();
-        // GET: Home
+        // GET: Solicitud
+        S_MiPrepago_Proveedor_Rest.ProveedorServiceClient p = new S_MiPrepago_Proveedor_Rest.ProveedorServiceClient();
+        public ActionResult Solicitud(string marca,string modelo)
+        {
+            ViewBag.dictionary = p.consultarDisponibilidad(marca, modelo);
+            return View();
+
+            //var prov= p.consultarDisponibilidad(marca, modelo);
+
+            //return Json(new
+            //{
+            //    rows = prov,
+            //    msg = "",
+            //    total = 0
+            //}, JsonRequestBehavior.AllowGet);
+            //return View();
+        }
+
+
+
         public ActionResult Index()
         {
-            var cbo_marca = objc.listarMarca();
-            ViewBag.cbo_marca = new SelectList(cbo_marca, "marca_id", "nombre");
             return View();
         }
-        public ActionResult Listar_ModelosxMarcas(int id)
-        {
-            var n = objm.Listar_ModeloxMarca(id);
-            return Json(new
-            {
-                rows = n,
-                msg = "",
-                total = 0
-            }, JsonRequestBehavior.AllowGet);
-            //return View();
-        }
-        public ActionResult Listar_Marca_Proveedor(string nombre)
-        {
-            var n = objm.Listado_ModeloxMarca_Proveedor(nombre);
-            return Json(new
-            {
-                rows = n,
-                msg = "",
-                total = 0
-            }, JsonRequestBehavior.AllowGet);
-            //return View();
-        }
-        public RedirectToRouteResult  Solicitud(string marca, string modelo) {
-            return RedirectToAction("Solicitud", "Solicitud", new { marca = marca, modelo = modelo });
-        }
 
-
-
-
-
-        // GET: Home/Details/5
+        // GET: Solicitud/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: Home/Create
+        // GET: Solicitud/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Home/Create
+        // POST: Solicitud/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
@@ -75,13 +61,13 @@ namespace WebSite.Controllers
             }
         }
 
-        // GET: Home/Edit/5
+        // GET: Solicitud/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: Home/Edit/5
+        // POST: Solicitud/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -97,13 +83,13 @@ namespace WebSite.Controllers
             }
         }
 
-        // GET: Home/Delete/5
+        // GET: Solicitud/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: Home/Delete/5
+        // POST: Solicitud/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {
