@@ -104,6 +104,8 @@
     <Compile Include="Dominio\Marca.cs" />
     <Compile Include="Dominio\Modelo.cs" />
     <Compile Include="Dominio\Proveedor.cs" />
+    <Compile Include="Dominio\Reserva.cs" />
+    <Compile Include="Dominio\ReservaProveedor.cs" />
     <Compile Include="Errores\ModeloRepetidoException.cs" />
     <Compile Include="Errores\RepetidoException.cs" />
     <Compile Include="IMarcas.cs" />
@@ -117,6 +119,7 @@
     <Compile Include="Persistencia\ModeloDAO.cs" />
     <Compile Include="Dominio\ModeloProveedor.cs" />
     <Compile Include="Persistencia\ProveedorDAO.cs" />
+    <Compile Include="Persistencia\ReservaDAO.cs" />
     <Compile Include="Persistencia\Util.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProveedorService.svc.cs">

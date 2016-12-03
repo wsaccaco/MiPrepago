@@ -9,13 +9,22 @@ using RESTServices.Persistencia;
 
 namespace RESTServices
 {
-    // NOTA: puede usar el comando "Rename" del menú "Refactorizar" para cambiar el nombre de clase "Reservas" en el código, en svc y en el archivo de configuración a la vez.
-    // NOTA: para iniciar el Cliente de prueba WCF para probar este servicio, seleccione Reservas.svc o Reservas.svc.cs en el Explorador de soluciones e inicie la depuración.
+   
     public class Reservas : IReservas
     {
+
+        private string generateID() {
+            return Guid.NewGuid().ToString().Substring(0, 8);
+        }
+
         private ReservaDAO dao = new ReservaDAO();
-        public Reserva crearReserva(Reserva reservaACrear)
+        public Reserva crearReserva(Reserva reservaALlegar)
         {
+            Reserva reservaACrear = new Reserva();
+            reservaACrear.estado = "Reserva";
+            reservaACrear.codigoReserva = generateID();
+            reservaACrear.modeloId = reservaALlegar.modeloId;
+            reservaACrear.cantidad = reservaALlegar.cantidad;
             return dao.crear(reservaACrear);
         }
 

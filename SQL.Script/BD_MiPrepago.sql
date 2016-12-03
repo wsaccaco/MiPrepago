@@ -108,7 +108,7 @@ Se esperaba:
 
 CREATE TABLE reserva 
     (
-     reserva_id INTEGER NOT NULL , 
+     reserva_id INTEGER NOT NULL identity(1,1), 
      nombre VARCHAR (90) , 
      apellidos VARCHAR (90) , 
      email VARCHAR (90) , 

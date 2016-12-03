@@ -14,5 +14,9 @@ namespace WS_MiPrepago
     {
         [OperationContract]
         List<ModeloProveedor> consultarDisponibilidad(string marca, string modelo);
+   
+        [OperationContract]
+        Reserva crearReserva(Reserva reservaAcrear);
+
     }
 }

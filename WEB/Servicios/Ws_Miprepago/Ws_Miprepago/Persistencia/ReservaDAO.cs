@@ -1,12 +1,12 @@
-﻿using RESTServices.Dominio;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using WS_MiPrepago.Dominio;
 
-namespace RESTServices.Persistencia
+namespace WS_MiPrepago.Persistencia
 {
     public class ReservaDAO
     {
@@ -14,17 +14,18 @@ namespace RESTServices.Persistencia
         {
             Reserva ReservaCreado = null;
             int createid = 0;
-            string sql = "INSERT INTO Ventas  output INSERTED.id VALUES(@estado, @cantidad, GETDATE(), @codigoReserva, @modeloId)";
-            using (SqlConnection conexion = new SqlConnection(utilConexion.CadenaConexion))
+            string sql = "INSERT INTO Reserva output INSERTED.reserva_id VALUES(@nombre, @apellido, @email, @celular, @cantidad, GETDATE(), @proveedor_id)";
+            using (SqlConnection conexion = new SqlConnection(Util.CadenaConexion))
             {
                 conexion.Open();
                 using (SqlCommand comando = new SqlCommand(sql, conexion))
                 {
-                    comando.Parameters.Add(new SqlParameter("@estado", ReservaACrear.estado));
+                    comando.Parameters.Add(new SqlParameter("@nombre", ReservaACrear.nombre));
+                    comando.Parameters.Add(new SqlParameter("@apellido", ReservaACrear.apellido));
+                    comando.Parameters.Add(new SqlParameter("@email", ReservaACrear.email));
+                    comando.Parameters.Add(new SqlParameter("@celular", ReservaACrear.celular));
                     comando.Parameters.Add(new SqlParameter("@cantidad", ReservaACrear.cantidad));
-                    //comando.Parameters.Add(new SqlParameter("@fecha", ReservaACrear.fecha));
-                    comando.Parameters.Add(new SqlParameter("@codigoReserva", ReservaACrear.codigoReserva));
-                    comando.Parameters.Add(new SqlParameter("@modeloId", ReservaACrear.modeloId));
+                    comando.Parameters.Add(new SqlParameter("@proveedor_id", ReservaACrear.proveedor_id));
                     createid = (int) comando.ExecuteScalar();
                 }
             }
@@ -35,8 +36,8 @@ namespace RESTServices.Persistencia
         public Reserva obtener(int Id)
         {
             Reserva ReservaEncontrado = null;
-            string sql = "SELECT * FROM ventas WHERE id = @id";
-            using (SqlConnection conexion = new SqlConnection(utilConexion.CadenaConexion))
+            string sql = "SELECT * FROM Reserva WHERE Reserva_id = @id";
+            using (SqlConnection conexion = new SqlConnection(Util.CadenaConexion))
             {
                 conexion.Open();
                 using (SqlCommand comando = new SqlCommand(sql, conexion))
@@ -48,12 +49,13 @@ namespace RESTServices.Persistencia
                         {
                             ReservaEncontrado = new Reserva()
                             {
-                                id = Int32.Parse(resultado["id"].ToString()),
-                                estado = (string)resultado["estado"],
+                                reserva_id = Int32.Parse(resultado["reserva_id"].ToString()),
+                                nombre = (string)resultado["nombre"],
+                                apellido = (string)resultado["apellidos"],
+                                email = (string)resultado["email"],
+                                celular = (string)resultado["celular"],
                                 cantidad = Int32.Parse(resultado["cantidad"].ToString()),
-                                fecha = (DateTime)resultado["fecha"],
-                                codigoReserva = (string)resultado["codigo_reserva"],
-                                modeloId = Int32.Parse(resultado["modelo_id"].ToString()),
+                                proveedor_id = Int32.Parse(resultado["proveedor_id"].ToString())
                             };
                         }
                     }
@@ -62,6 +64,5 @@ namespace RESTServices.Persistencia
 
             return ReservaEncontrado;
         }
-
     }
 }

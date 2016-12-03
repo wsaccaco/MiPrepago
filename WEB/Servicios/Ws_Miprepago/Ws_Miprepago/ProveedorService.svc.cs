@@ -7,6 +7,7 @@ using System.Net;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Web.Script.Serialization;
 using WS_MiPrepago.Dominio;
 using WS_MiPrepago.Persistencia;
 
@@ -17,6 +18,7 @@ namespace WS_MiPrepago
     public class ProveedorService : IProveedorService
     {
         private ProveedorDAO proveedorDAO = new ProveedorDAO();
+        private ReservaDAO reservaDAO = new ReservaDAO();
         public List<ModeloProveedor> consultarDisponibilidad(string marca, string modelo)
         {
 
@@ -57,5 +59,29 @@ namespace WS_MiPrepago
             return list;
         }
 
+        public Reserva crearReserva(Reserva reservaAllegar)
+        {
+
+            Reserva reservaAMostrar = new Reserva();
+            string postdata = "{\"cantidad\": "+ reservaAllegar.cantidad + ", \"modeloId\": "+reservaAllegar.modeloId + " }"; //JSON
+            byte[] data = Encoding.UTF8.GetBytes(postdata);
+            HttpWebRequest req = (HttpWebRequest)WebRequest
+                .Create("http://localhost:12855/Reservas.svc/reserva");
+            req.Method = "POST";
+            req.ContentLength = data.Length;
+            req.ContentType = "application/json";
+            var reqStream = req.GetRequestStream();
+            reqStream.Write(data, 0, data.Length);
+            HttpWebResponse res = (HttpWebResponse)req.GetResponse();
+            StreamReader reader = new StreamReader(res.GetResponseStream());
+            string MarcaJson = reader.ReadToEnd();
+            JavaScriptSerializer js = new JavaScriptSerializer();
+            ReservaProveedor ReservaCreado = js.Deserialize<ReservaProveedor>(MarcaJson);
+
+
+            reservaAMostrar = reservaDAO.crear(reservaAllegar);
+            reservaAMostrar.codigoReserva = ReservaCreado.codigoReserva;
+            return reservaAMostrar;
+        }
     }
 }
