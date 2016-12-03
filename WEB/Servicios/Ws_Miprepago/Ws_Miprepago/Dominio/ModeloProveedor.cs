@@ -24,6 +24,9 @@ namespace WS_MiPrepago.Dominio
         public int stock { get; set; }
 
         [DataMember(IsRequired = false)]
+        public int proveedor_id { get; set; }
+
+        [DataMember(IsRequired = false)]
         public int marcaId { get; set; }
 
         [DataMember(IsRequired = false)]

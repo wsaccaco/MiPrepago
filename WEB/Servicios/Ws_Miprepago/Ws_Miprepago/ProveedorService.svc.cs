@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using IronSharp.Core;
+using IronSharp.IronMQ;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -13,8 +15,6 @@ using WS_MiPrepago.Persistencia;
 
 namespace WS_MiPrepago
 {
-    // NOTA: puede usar el comando "Rename" del menú "Refactorizar" para cambiar el nombre de clase "ProveedorService" en el código, en svc y en el archivo de configuración a la vez.
-    // NOTA: para iniciar el Cliente de prueba WCF para probar este servicio, seleccione ProveedorService.svc o ProveedorService.svc.cs en el Explorador de soluciones e inicie la depuración.
     public class ProveedorService : IProveedorService
     {
         private ProveedorDAO proveedorDAO = new ProveedorDAO();
@@ -26,22 +26,23 @@ namespace WS_MiPrepago
 
             foreach (var pro in proveedorDAO.Listar()) {
 
-                HttpWebRequest req2 = (HttpWebRequest)WebRequest
-                   .Create(pro.ruta + modelo + "/marca/" + marca);
-                req2.Method = "GET";
-                HttpWebResponse res2 = (HttpWebResponse)req2.GetResponse();
-                StreamReader reader2 = new StreamReader(res2.GetResponseStream());
-                string ModeloJson2 = reader2.ReadToEnd();
-    
-                ModeloProveedor mo = new ModeloProveedor();
-                var resultado = JsonConvert.DeserializeObject<dynamic>(ModeloJson2);
-                int total = resultado.Count;
-                if (total > 0)
-                {
-                    foreach (var r in resultado)
+                try {
+
+                    HttpWebRequest req2 = (HttpWebRequest)WebRequest
+                       .Create(pro.ruta + modelo + "/marca/" + marca);
+                    req2.Method = "GET";
+                    HttpWebResponse res2 = (HttpWebResponse)req2.GetResponse();
+                    StreamReader reader2 = new StreamReader(res2.GetResponseStream());
+                    string ModeloJson2 = reader2.ReadToEnd();
+
+                    ModeloProveedor mo = new ModeloProveedor();
+                    var resultado = JsonConvert.DeserializeObject<dynamic>(ModeloJson2);
+                    int total = resultado.Count;
+                    if (total > 0)
                     {
-                        mo = new ModeloProveedor
+                        foreach (var r in resultado)
                         {
+<<<<<<< HEAD
                             id = r.id,
                             anio = r.anio,
                             nombre = r.nombre,
@@ -53,9 +54,49 @@ namespace WS_MiPrepago
                            
                         };
                         list.Add(mo);
+=======
+                            mo = new ModeloProveedor
+                            {
+                                id = r.id,
+                                anio = r.anio,
+                                nombre = r.nombre,
+                                precio = r.precio,
+                                stock = r.stock,
+                                marcaId = r.marcaId,
+                                proveedor = pro.nombre,
+                                proveedor_id = pro.proveedor_id
+                            };
+                            list.Add(mo);
+>>>>>>> 34d84d5a0db0b65f074c8a028447a11f014ee5c7
 
+                        }
                     }
+
                 }
+                catch (WebException e) {
+                    // Install-Package Iron.IronMQ -Pre
+                    var ironMq = IronSharp.IronMQ.Client.New(
+                        new IronClientConfig
+                        {
+                            ProjectId = "583f91c0d9cc19000737b89d",
+                            Token = "MfA9AIYOrPzopPYkR6vC",
+                            Host = "mq-aws-eu-west-1-1.iron.io",
+                            Scheme = "http",
+                            Port = 80
+                        });
+
+                    var queues = ironMq.Queues();
+
+                    foreach (var queueInfo in queues)
+                        Console.WriteLine(queueInfo.Name);
+
+                    QueueClient queue = ironMq.Queue("colanew");
+                    string messageId = queue.Post(pro.nombre + "|" + pro.ruta+ "|"+ DateTime.Now.ToString()+ "|" + marca + "|" + modelo);
+                    QueueMessage message = queue.Reserve();
+                    Console.WriteLine(message.Body);
+                    Console.WriteLine(message.ReservationId);
+                }
+
             }
             
             return list;
