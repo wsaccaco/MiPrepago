@@ -14,7 +14,8 @@ namespace WebSite.Models
         public float precio { get; set; }
         public string proveedor { get; set; }
         public int stock { get; set; }
-      
+        public int proveedor_id { get; set; }
+
     }
   
   }

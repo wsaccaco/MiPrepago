@@ -48,6 +48,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
@@ -183,6 +187,9 @@
     <Content Include="Service References\S_MiPrepago_Proveedor_Rest\WebSite.S_MiPrepago_Proveedor_Rest.ModeloProveedor.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Service References\S_MiPrepago_Proveedor_Rest\WebSite.S_MiPrepago_Proveedor_Rest.Reserva.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -193,6 +200,7 @@
     </Compile>
     <Compile Include="Models\Model_Proveedor.cs" />
     <Compile Include="Models\Proveeedor.cs" />
+    <Compile Include="Models\reserva.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\S_MiPrepago_Marca\Reference.cs">
       <AutoGen>True</AutoGen>

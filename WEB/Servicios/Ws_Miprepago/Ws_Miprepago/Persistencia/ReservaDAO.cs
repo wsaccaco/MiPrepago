@@ -14,7 +14,7 @@ namespace WS_MiPrepago.Persistencia
         {
             Reserva ReservaCreado = null;
             int createid = 0;
-            string sql = "INSERT INTO Reserva output INSERTED.reserva_id VALUES(@nombre, @apellido, @email, @celular, @cantidad, GETDATE(), @proveedor_id)";
+            string sql = "INSERT INTO Reserva(nombre,apellidos,email,celular,cantidad,fecha,proveedor_id) output INSERTED.reserva_id VALUES(@nombre, @apellido, @email, @celular, @cantidad, GETDATE(), @proveedor_id)";
             using (SqlConnection conexion = new SqlConnection(Util.CadenaConexion))
             {
                 conexion.Open();
@@ -36,7 +36,8 @@ namespace WS_MiPrepago.Persistencia
         public Reserva obtener(int Id)
         {
             Reserva ReservaEncontrado = null;
-            string sql = "SELECT * FROM Reserva WHERE Reserva_id = @id";
+            string sql = "SELECT r.reserva_id,r.nombre,r.apellidos,r.email,r.celular,r.cantidad,r.proveedor_id,p.nombre proveedor FROM Reserva r "+
+                            "inner join proveedor p on p.proveedor_id = r.proveedor_id WHERE Reserva_id = @id";
             using (SqlConnection conexion = new SqlConnection(Util.CadenaConexion))
             {
                 conexion.Open();
@@ -55,7 +56,9 @@ namespace WS_MiPrepago.Persistencia
                                 email = (string)resultado["email"],
                                 celular = (string)resultado["celular"],
                                 cantidad = Int32.Parse(resultado["cantidad"].ToString()),
-                                proveedor_id = Int32.Parse(resultado["proveedor_id"].ToString())
+                                proveedor_id = Int32.Parse(resultado["proveedor_id"].ToString()),
+                                proveedor = (string)resultado["proveedor"]
+
                             };
                         }
                     }

@@ -4,13 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using WebSite.Models;
+using Newtonsoft.Json;
 namespace WebSite.Controllers
 {
     public class SolicitudController : Controller
     {
         // GET: Solicitud
         S_MiPrepago_Proveedor_Rest.ProveedorServiceClient p = new S_MiPrepago_Proveedor_Rest.ProveedorServiceClient();
-       
+        S_MiPrepago_Proveedor_Rest.Reserva reserva_s = new S_MiPrepago_Proveedor_Rest.Reserva();
         public ActionResult Solicitud(string marca,string modelo)
         {
             
@@ -28,25 +29,32 @@ namespace WebSite.Controllers
                     nombre =r.nombre,
                     precio=r.precio,
                     proveedor=r.proveedor,
-                    stock=r.stock
+                    stock=r.stock,
+                    proveedor_id=r.proveedor_id
+                   
                 };
                 m_pro.ListaProveedor.Add(prov);
             }
             return View(m_pro);
-            //return View(new { Values = prov.ListaProveedor });
-            //return View();
-
-            //var prov= p.consultarDisponibilidad(marca, modelo);
-
-            //return Json(new
-            //{
-            //    rows = prov,
-            //    msg = "",
-            //    total = 0
-            //}, JsonRequestBehavior.AllowGet);
-            //return View();
+         }
+        public ActionResult Reserva(string dato)
+        {
+            var resultado = JsonConvert.DeserializeObject<dynamic>(dato);
+            int total = resultado.Count;
+            foreach (var r in resultado) {
+                //reserva re = new reserva();
+                reserva_s.nombre = r.nombre.Value;
+                reserva_s.apellido = r.apellidos.Value;
+                reserva_s.email = r.email.Value;
+                reserva_s.celular = r.celular.Value;
+                reserva_s.cantidad =Convert.ToInt32( r.cantidad.Value);
+                reserva_s.modeloId = r.modelo_id;
+                reserva_s.proveedor_id = r.proveedor_id;
+            }
+            var res = p.crearReserva(reserva_s);
+            string datos_de_reserva = "Puede ir a su proveedor " + res.proveedor + " a recoger su equipo, tiene dos dias y su codigo es " + res.codigoReserva;
+            return Content(JsonConvert.SerializeObject(datos_de_reserva), "application/json");
         }
-
 
 
         public ActionResult Index()

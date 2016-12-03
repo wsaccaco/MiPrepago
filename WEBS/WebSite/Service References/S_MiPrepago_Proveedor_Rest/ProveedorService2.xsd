@@ -16,4 +16,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="crearReserva">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WS_MiPrepago.Dominio" minOccurs="0" name="reservaAcrear" nillable="true" type="q2:Reserva" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="crearReservaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WS_MiPrepago.Dominio" minOccurs="0" name="crearReservaResult" nillable="true" type="q3:Reserva" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

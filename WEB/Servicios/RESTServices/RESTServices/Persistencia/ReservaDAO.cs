@@ -14,7 +14,7 @@ namespace RESTServices.Persistencia
         {
             Reserva ReservaCreado = null;
             int createid = 0;
-            string sql = "INSERT INTO Ventas  output INSERTED.id VALUES(@estado, @cantidad, GETDATE(), @codigoReserva, @modeloId)";
+            string sql = "INSERT INTO Ventas (estado,cantidad,fecha,codigo_reserva,modelo_id) output INSERTED.id VALUES(@estado, @cantidad, GETDATE(), @codigoReserva, @modeloId)";
             using (SqlConnection conexion = new SqlConnection(utilConexion.CadenaConexion))
             {
                 conexion.Open();

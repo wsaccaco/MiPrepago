@@ -24,25 +24,82 @@
         </tr>
     </thead>
 </table>
+
+<div class="modal fade " id="pnl_reserva" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="pnl_tipocambio_title">Reserva</h4>
+            </div>
+            <div class="modal-body ">
+                <div class="form-inline">
+                    <input type="hidden" id="modelo_id" />
+                    <input type="hidden" id="proveedor_id" />
+
+                    <label class="control-label">Nombre :</label>
+                    <input type="text" class="form-control" id="txt_nombre" />
+                    <label class="control-label">Apellidos :</label>
+                    <input type="text" class="form-control" id="txt_apellidos" />
+                    <label class="control-label">Email :</label>
+                    <input type="text" class="form-control" id="txt_email" />
+                    <label class="control-label">Celular :</label>
+                    <input type="text" class="form-control" id="txt_celular" />
+                    <label class="control-label">Cantidad :</label>
+                    <input type="text" class="form-control" id="txt_cantidad" />
+                   
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="btncancelar" type="button" class="btn btn-default " data-dismiss="modal">Cancelar </button>
+                <button id="btnguardar" class="btn btn-primary" type="button">Guardar <span class="glyphicon glyphicon-floppy-disks"></span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script>
     //$(document).ready(function () {
+    var reserva=[];
+    function reservar (nombre,apellidos,email,celular,cantidad,modelo_id,proveedor_id){
+        reserva.push({'nombre':nombre,'apellidos':apellidos,'email':email,'celular':celular,'cantidad':cantidad,'modelo_id':modelo_id,'proveedor_id':proveedor_id});
+    }
+
     var $table = $("#tb_solicitud");
     $(function () {
         var locations = @Html.Raw(Json.Encode(Model.ListaProveedor));
-        
+
         var data =locations;
         $table.bootstrapTable({data: data});
         //alert(JSON.stringify(locations));
     });
+
     function actionFormatter(value, row, index) {
         var modelos;
         return [
-        '<a class="solicitar ml10" href="#" title="Solicitar" style="color:#DD4814"> solicitar',
+        '<a class="solicitar ml10" href="javascript:void(0)" title="Solicitar reserva" style="color:#DD4814"> solicitar Reserva',
                       '<i class="glyphicon glyphicon-eye-open" style="font-size:23px"></i>',
                       '</a>'
-                      
+
         ].join('');
     }
-    
-  
+    window.actionEvents = {
+        'click .solicitar': function (e, value, row, index) {
+            $("#modelo_id").val(row.id);
+            $("#proveedor_id").val(row.proveedor_id);
+
+            //$("#pnl_reserva").text("Ingresar Datos para la Reserva");
+            $("#pnl_reserva").modal("show");
+        },
+    }
+
+    $("#btnguardar").click(function(){
+        reservar($("#txt_nombre").val(),$("#txt_apellidos").val(),$("#txt_email").val(),$("#txt_celular").val(),$("#txt_cantidad").val(),$("#modelo_id").val(),$("#proveedor_id").val());
+
+
+        $.post('@Url.Action("Reserva")',{ dato: JSON.stringify(reserva) },function(data){
+            alert(data);
+        });
+    });
 </script>

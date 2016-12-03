@@ -14,8 +14,24 @@
       <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="precio" type="xs:float" />
       <xs:element minOccurs="0" name="proveedor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="proveedor_id" type="xs:int" />
       <xs:element minOccurs="0" name="stock" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ModeloProveedor" nillable="true" type="tns:ModeloProveedor" />
+  <xs:complexType name="Reserva">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cantidad" type="xs:int" />
+      <xs:element minOccurs="0" name="celular" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoReserva" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="modeloId" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="proveedor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="proveedor_id" type="xs:int" />
+      <xs:element minOccurs="0" name="reserva_id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Reserva" nillable="true" type="tns:Reserva" />
 </xs:schema>

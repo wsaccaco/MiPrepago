@@ -48,7 +48,9 @@ namespace WS_MiPrepago
                             precio = r.precio,
                             stock = r.stock,
                             marcaId = r.marcaId,
-                            proveedor = pro.nombre
+                            proveedor = pro.nombre,
+                            proveedor_id=pro.proveedor_id,
+                           
                         };
                         list.Add(mo);
 
