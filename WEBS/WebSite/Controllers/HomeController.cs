@@ -39,9 +39,9 @@ namespace WebSite.Controllers
             }, JsonRequestBehavior.AllowGet);
             //return View();
         }
-        public RedirectToRouteResult  Solicitud(string marca, string modelo) {
-            return RedirectToAction("Solicitud", "Solicitud", new { marca = marca, modelo = modelo });
-        }
+        //public RedirectToRouteResult  Solicitud(string marca, string modelo) {
+        //    return RedirectToAction("Solicitud", "Solicitud", new { marca = marca, modelo = modelo });
+        //}
 
 
 
