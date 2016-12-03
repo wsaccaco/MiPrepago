@@ -20,7 +20,7 @@
             <th data-field="precio">Precio</th>
             <th data-field="proveedor">Proveedor</th>
             <th data-field="stock">Stock</th>
-           
+            <th data-field="action" data-formatter="actionFormatter" data-events="actionEvents" style="width:305px">solicitud</th>
         </tr>
     </thead>
 </table>
@@ -34,7 +34,15 @@
         $table.bootstrapTable({data: data});
         //alert(JSON.stringify(locations));
     });
-
+    function actionFormatter(value, row, index) {
+        var modelos;
+        return [
+        '<a class="solicitar ml10" href="#" title="Solicitar" style="color:#DD4814"> solicitar',
+                      '<i class="glyphicon glyphicon-eye-open" style="font-size:23px"></i>',
+                      '</a>'
+                      
+        ].join('');
+    }
     
   
 </script>
