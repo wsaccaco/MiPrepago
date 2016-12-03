@@ -1,66 +1,40 @@
-﻿
+﻿@model WebSite.Models.Model_Proveedor
 @{
     ViewBag.Title = "Solicitud";
 }
 
 <h2>Solicitud</h2>
 
-<table id="tb_solicitud" data-toggle="table"
-       class="table table-hover" data-show-multi-sort="true"
+<table id="tb_solicitud"
+       @*class="table table-hover" data-show-multi-sort="true"
        data-show-columns="true"
        data-side-pagination="server" data-url='@Url.Action("Solicitud")'
        data-ajax="ajaxRequest"
        data-pagination="true"
        data-row-style="rowStyle"
-       data-click-to-select="true">
+       data-click-to-select="true"*@
+       >
     <thead>
         <tr>
-            <th data-field="nombre" data-animation="true" data-sortable="true">Nombre</th>
+            <th data-field="nombre">Nombre</th>
+            <th data-field="precio">Precio</th>
+            <th data-field="proveedor">Proveedor</th>
+            <th data-field="stock">Stock</th>
            
         </tr>
     </thead>
 </table>
 <script>
     //$(document).ready(function () {
-        var locations = @Html.Raw(Json.Encode(ViewBag.dictionary));
-        alert(locations);
-    //});
-        $("#tb_solicitud").bootstrapTable({
-            url: '@Url.Action("Solicitud")',
-            method: 'get',
-            columns: [
-                 {
-                     field: 'nombre',
-                     title: 'Nombre',
-                     width: 59,
-                 }
-            ],
-            pagination: false,
-            //pageSize: 10,
-            //pageList: [5, 10, 60, 120],
-            sidePagination: 'server', // client or server
-            queryParams: function (params) {
-            },
-            showRefresh: true,
-            maintainSelected: true,
-            clickToSelect: true,
-            singleSelect: true,
+    var $table = $("#tb_solicitud");
+    $(function () {
+        var locations = @Html.Raw(Json.Encode(Model.ListaProveedor));
+        
+        var data =locations;
+        $table.bootstrapTable({data: data});
+        //alert(JSON.stringify(locations));
+    });
 
-        });
-
-   
-    function ajaxRequest(params) {
-
-
-        $.get('@Url.Action("Solicitud")', {}, function (data) {
-
-            params.success({
-                total: 0,
-                rows: data.rows
-
-
-            });
-        });
-        params.complete();
-    };
+    
+  
 </script>
