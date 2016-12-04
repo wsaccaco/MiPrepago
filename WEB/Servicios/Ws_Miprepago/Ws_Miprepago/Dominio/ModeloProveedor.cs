@@ -31,7 +31,5 @@ namespace WS_MiPrepago.Dominio
 
         [DataMember(IsRequired = false)]
         public string proveedor { get; set; }
-        [DataMember(IsRequired = false)]
-        public int proveedor_id { get; set; }
     }
 }

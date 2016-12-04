@@ -1,3 +1,4 @@
+-- http://blog.dhananjaynene.com/2009/06/rest-soa-woa-or-roa/
 -- Generado por Oracle SQL Developer Data Modeler 4.2.0.917
 --   en:        2016-11-07 00:53:58 COT
 --   sitio:      SQL Server 2012

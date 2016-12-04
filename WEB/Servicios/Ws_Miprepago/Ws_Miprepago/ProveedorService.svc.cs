@@ -42,19 +42,6 @@ namespace WS_MiPrepago
                     {
                         foreach (var r in resultado)
                         {
-<<<<<<< HEAD
-                            id = r.id,
-                            anio = r.anio,
-                            nombre = r.nombre,
-                            precio = r.precio,
-                            stock = r.stock,
-                            marcaId = r.marcaId,
-                            proveedor = pro.nombre,
-                            proveedor_id=pro.proveedor_id,
-                           
-                        };
-                        list.Add(mo);
-=======
                             mo = new ModeloProveedor
                             {
                                 id = r.id,
@@ -67,8 +54,7 @@ namespace WS_MiPrepago
                                 proveedor_id = pro.proveedor_id
                             };
                             list.Add(mo);
->>>>>>> 34d84d5a0db0b65f074c8a028447a11f014ee5c7
-
+                            
                         }
                     }
 
