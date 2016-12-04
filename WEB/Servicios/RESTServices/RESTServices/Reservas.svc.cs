@@ -6,6 +6,8 @@ using System.ServiceModel;
 using System.Text;
 using RESTServices.Dominio;
 using RESTServices.Persistencia;
+using System.ServiceModel.Web;
+using System.Net;
 
 namespace RESTServices
 {
@@ -18,8 +20,15 @@ namespace RESTServices
         }
 
         private ReservaDAO dao = new ReservaDAO();
+        private ModeloDAO modeloDAO = new ModeloDAO();
         public Reserva crearReserva(Reserva reservaALlegar)
         {
+
+            if (modeloDAO.obtener(reservaALlegar.modeloId).stock < reservaALlegar.cantidad)
+            {
+                throw new WebFaultException<string>("Stock Insuficiente", HttpStatusCode.NotAcceptable);
+            }
+
             Reserva reservaACrear = new Reserva();
             reservaACrear.estado = "Reserva";
             reservaACrear.codigoReserva = generateID();

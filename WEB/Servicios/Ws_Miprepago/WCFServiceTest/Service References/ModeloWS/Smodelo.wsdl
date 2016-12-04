@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Smodelo" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:60184/Smodelo.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:60184/Smodelo.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WS_MiPrepago.Errores" />
+      <xsd:import schemaLocation="http://localhost:60184/Smodelo.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:60184/Smodelo.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WS_MiPrepago.Dominio" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISmodelo_crearModelo_InputMessage">
+    <wsdl:part name="parameters" element="tns:crearModelo" />
+  </wsdl:message>
+  <wsdl:message name="ISmodelo_crearModelo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:crearModeloResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmodelo_crearModelo_ModeloRepetidoExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/WS_MiPrepago.Errores" name="detail" element="q1:ModeloRepetidoException" />
+  </wsdl:message>
+  <wsdl:message name="ISmodelo_obtenerModelo_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerModelo" />
+  </wsdl:message>
+  <wsdl:message name="ISmodelo_obtenerModelo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerModeloResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmodelo_listarModelo_InputMessage">
+    <wsdl:part name="parameters" element="tns:listarModelo" />
+  </wsdl:message>
+  <wsdl:message name="ISmodelo_listarModelo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listarModeloResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmodelo_Listar_ModeloxMarca_InputMessage">
+    <wsdl:part name="parameters" element="tns:Listar_ModeloxMarca" />
+  </wsdl:message>
+  <wsdl:message name="ISmodelo_Listar_ModeloxMarca_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Listar_ModeloxMarcaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmodelo_Listado_ModeloxMarca_Proveedor_InputMessage">
+    <wsdl:part name="parameters" element="tns:Listado_ModeloxMarca_Proveedor" />
+  </wsdl:message>
+  <wsdl:message name="ISmodelo_Listado_ModeloxMarca_Proveedor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Listado_ModeloxMarca_ProveedorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISmodelo_Listado_ModeloxMarca_Proveedor_ExceptionGeneralFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/WS_MiPrepago.Errores" name="detail" element="q2:ExceptionGeneral" />
+  </wsdl:message>
+  <wsdl:portType name="ISmodelo">
+    <wsdl:operation name="crearModelo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISmodelo/crearModelo" message="tns:ISmodelo_crearModelo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISmodelo/crearModeloResponse" message="tns:ISmodelo_crearModelo_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISmodelo/crearModeloModeloRepetidoExceptionFault" name="ModeloRepetidoExceptionFault" message="tns:ISmodelo_crearModelo_ModeloRepetidoExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerModelo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISmodelo/obtenerModelo" message="tns:ISmodelo_obtenerModelo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISmodelo/obtenerModeloResponse" message="tns:ISmodelo_obtenerModelo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listarModelo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISmodelo/listarModelo" message="tns:ISmodelo_listarModelo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISmodelo/listarModeloResponse" message="tns:ISmodelo_listarModelo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Listar_ModeloxMarca">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISmodelo/Listar_ModeloxMarca" message="tns:ISmodelo_Listar_ModeloxMarca_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISmodelo/Listar_ModeloxMarcaResponse" message="tns:ISmodelo_Listar_ModeloxMarca_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Listado_ModeloxMarca_Proveedor">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISmodelo/Listado_ModeloxMarca_Proveedor" message="tns:ISmodelo_Listado_ModeloxMarca_Proveedor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISmodelo/Listado_ModeloxMarca_ProveedorResponse" message="tns:ISmodelo_Listado_ModeloxMarca_Proveedor_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ISmodelo/Listado_ModeloxMarca_ProveedorExceptionGeneralFault" name="ExceptionGeneralFault" message="tns:ISmodelo_Listado_ModeloxMarca_Proveedor_ExceptionGeneralFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISmodelo" type="tns:ISmodelo">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="crearModelo">
+      <soap:operation soapAction="http://tempuri.org/ISmodelo/crearModelo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ModeloRepetidoExceptionFault">
+        <soap:fault use="literal" name="ModeloRepetidoExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerModelo">
+      <soap:operation soapAction="http://tempuri.org/ISmodelo/obtenerModelo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listarModelo">
+      <soap:operation soapAction="http://tempuri.org/ISmodelo/listarModelo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Listar_ModeloxMarca">
+      <soap:operation soapAction="http://tempuri.org/ISmodelo/Listar_ModeloxMarca" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Listado_ModeloxMarca_Proveedor">
+      <soap:operation soapAction="http://tempuri.org/ISmodelo/Listado_ModeloxMarca_Proveedor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionGeneralFault">
+        <soap:fault use="literal" name="ExceptionGeneralFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Smodelo">
+    <wsdl:port name="BasicHttpBinding_ISmodelo" binding="tns:BasicHttpBinding_ISmodelo">
+      <soap:address location="http://localhost:60184/Smodelo.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

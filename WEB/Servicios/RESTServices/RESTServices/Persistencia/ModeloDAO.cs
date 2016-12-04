@@ -43,6 +43,37 @@ namespace RESTServices.Persistencia
         }
 
 
+        public Modelo obtener(int Id)
+        {
+            Modelo ModeloEncontrado = null;
+            string sql = "SELECT * FROM modelo WHERE id = @id";
+            using (SqlConnection conexion = new SqlConnection(utilConexion.CadenaConexion))
+            {
+                conexion.Open();
+                using (SqlCommand comando = new SqlCommand(sql, conexion))
+                {
+                    comando.Parameters.Add(new SqlParameter("@id", Id));
+                    using (SqlDataReader resultado = comando.ExecuteReader())
+                    {
+                        if (resultado.Read())
+                        {
+                            ModeloEncontrado = new Modelo()
+                            {
+                                id = Int32.Parse(resultado["id"].ToString()),
+                                nombre = (string)resultado["nombre"],
+                                stock = Int32.Parse(resultado["stock"].ToString()),
+                                marcaId = Int32.Parse(resultado["marca_id"].ToString()),
+                                precio = float.Parse(resultado["precio"].ToString())
+                            };
+                        }
+                    }
+                }
+            }
+
+            return ModeloEncontrado;
+        }
+
+
         public List<Modelo> ListarModelo(string nombre_modelo, string nombre_marca)
         {
             List<Modelo> ModelosEncontrados = new List<Modelo>();

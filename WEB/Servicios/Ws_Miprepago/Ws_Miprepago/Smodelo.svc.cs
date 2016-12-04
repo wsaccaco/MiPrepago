@@ -97,11 +97,6 @@ namespace WS_MiPrepago
 
                 }
             }
-            //Tuple<List<Modelo>, string> t = new Tuple<List<Modelo>, string>(list, "");
-            
-
-            //JavaScriptSerializer js2 = new JavaScriptSerializer();
-            //Modelo MarcaObtenido = js2.Deserialize<Modelo>(ModeloJson2);
 
             return list;
         }
