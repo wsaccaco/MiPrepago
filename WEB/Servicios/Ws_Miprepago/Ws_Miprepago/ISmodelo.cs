@@ -26,6 +26,7 @@ namespace WS_MiPrepago
         [OperationContract]
         List<Modelo> Listar_ModeloxMarca(int id);
 
+        [FaultContract(typeof(ExceptionGeneral))]
         [OperationContract]
         List<Modelo> Listado_ModeloxMarca_Proveedor(string nombre);
     }

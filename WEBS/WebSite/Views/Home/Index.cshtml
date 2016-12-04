@@ -7,24 +7,43 @@
 
 <div class="alert alert-danger" role="alert"> xD </div>
 
-<div class="row">
-    <div class="col-lg-5">
-        <label class="control-label ">Marca :</label>
-        <select class="form-control input-sm" id="cbo_marca" data-name="Marca">
+<div class="container">
 
-            @foreach (var item in (SelectList)ViewBag.cbo_marca)
-            {
-                <option value="@item.Value">@item.Text</option>
-            }
-        </select>
-    </div>
-    <div class="col-lg-5">
-        <label class="control-label otro" style="display:none">Escribir Marca :</label>
-        <input type="text" class="form-control otro" id="txt_marca" style="display:none" />
+    <div class="row">
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Marca</label>
+                <div class="col-sm-10">
+                    <select class="form-control input-sm" id="cbo_marca" data-name="Marca">
 
+                        @foreach (var item in (SelectList)ViewBag.cbo_marca)
+                        {
+                            <option value="@item.Value">@item.Text</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label otro" style="display:none">Escribir Marca :</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control otro" id="txt_marca" style="display:none" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <input type="button" id="btn_listar" value="Listar Producto" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-lg-4">
-        <input type="button" id="btn_listar" value="Listar Producto" class="btn btn-primary" />
+
+
+    <div class="row alert-proveedor" style="display: none">
+        <div class="form-group">
+            <div class="alert alert-info" role="alert">Estos productos fueron consultado de nuestros proveedores</div>
+        </div>
+        
     </div>
 
     <table id="tb_modelo" data-toggle="table"
@@ -114,6 +133,7 @@
         } else {
             var marca = $("#txt_marca").val();
             $.get('@Url.Action("Listar_Marca_Proveedor")', { nombre: marca }, function (data) {
+                $(".alert-proveedor").hide();
                 if (data == null) {
                     $.notify({
                         message: "No hay datos."
@@ -125,6 +145,7 @@
                         total: 0,
                         rows: data.rows
                     });
+                    $(".alert-proveedor").show()
                 }
             });
 
@@ -134,7 +155,8 @@
 
 
     $("#cbo_marca").on("change", function () {
-        if ($("#cbo_marca").val() == 5) {
+        console.log($("#cbo_marca option:selected").text())
+        if ($("#cbo_marca option:selected").text() == "Otros") {
             $(".otro").css({ 'display': "block" });
         } else {
             $(".otro").css({ 'display': "none" });

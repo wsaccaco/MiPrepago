@@ -124,6 +124,7 @@
     <Compile Include="Dominio\Proveedor.cs" />
     <Compile Include="Dominio\Reserva.cs" />
     <Compile Include="Dominio\ReservaProveedor.cs" />
+    <Compile Include="Errores\ExceptionGeneral.cs" />
     <Compile Include="Errores\ModeloRepetidoException.cs" />
     <Compile Include="Errores\RepetidoException.cs" />
     <Compile Include="IMarcas.cs" />
