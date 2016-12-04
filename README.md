@@ -5,7 +5,7 @@
 - Repositorio: https://github.com/wsaccaco/MiPrepago
  
 ##### Integrantes:
-- Waldo Saccaco Cardenas - 201522215 w.saccaco.me
+- Waldo Saccaco Cardenas - 201522215 [w.saccaco.me](https://w.saccaco.me)
  
 - Horario: IS159-E6KB
 - Profesor: Héctor Saira
